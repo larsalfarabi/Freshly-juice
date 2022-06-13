@@ -79,6 +79,7 @@ body {
 }
 
 @media screen and (max-width: 820px) {
+
   .service .headings {
     font-size: 20px !important;
   }
@@ -95,6 +96,11 @@ body {
   }
   .lokasi .map .text h5{
     font-size: 17px !important;
+  }
+  .lokasi .card-map #map iframe{
+    height: 200px !important;
+    width: 298px !important;
+    border-radius: 8px !important;
   }
 }
 @media screen and (min-width: 820px) {
