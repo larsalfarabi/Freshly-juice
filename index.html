@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+  <title>| Freshly juice |</title>
+
+  <!-- bootsrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <!-- box icon -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/d58dabec06.js" crossorigin="anonymous"></script>
+
+  <!-- map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark py-3">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="images/Group 1.png" alt="" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <div id="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end align-items-lg-center"
+      id="navbarNavAltMarkup">
+      <div class="navbar-nav me-4">
+        <a class="nav-link me-3 active" aria-current="page" href="#home"><i class="fa-solid fa-lemon me-1"
+            style="color: #002939;"></i>Home</a>
+        <a class="nav-link me-3" href="#product">Product</a>
+        <a class="nav-link me-3" href="#benefit">Benefit Of Our Product</a>
+        <a class="nav-link me-3" href="#lokasi">Where To Buy</a>
+        <a class="nav-link" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- home -->
+<section class="home" id="home">
+  <div class="container h-100">
+    <div class="row h-100" >
+      <div class="col-lg-6 d-lg-flex flex-column justify-content-lg-end content-left">
+        <h1 class="heading">Natural freshly blended juice</h1>
+        <p class="subheading">
+          Start your day with a freshly blended juice. Our refreshing drinks
+          recipes are packed with fruit, delivering a feelgood vitamin
+          boots.
+        </p>
+        <div class="btn-home mt-4 mb-4">
+          <a href="#" class="btn btn-light btn-buy py-2 px-3">Order Now!
+            <img src="images/strawberry-milk.png" style="width: 1.7rem" /></a>
+        </div>
+      </div>
+      <div class="col-lg-6  position-relative d-lg-block d-none">
+        <!-- <img src="images/birgith-roosipuu-hom5fPULf4I-unsplash 1.png" alt=""
+          class="img-fluid img-home position-absolute" /> -->
+        <img src="images/jeruk.png" alt="" class="position-absolute img-home2 ">
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- service -->
+<section class="service section-margin" id="service">
+  <div class="container text-center">
+    <div class="row pt-5 g-md-0 g-3 d-flex justify-content-evenly">
+      <div class="col-9 col-lg-3 col-md-4 mb-3 my-md-0">
+        <h1 class="display-5 mb-4"><img src="images/icons8-group-of-fruits-96.png" alt=""
+            style="width: 48px !important; "></h1>
+        <div class="card-body">
+          <h3 class="card-tittle pb-2 fw-bold">100% Natural Juice</h3>
+          <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor
+            sit amet.</p>
+        </div>
+      </div>
+      <div class="col-9 col-lg-3 col-md-4">
+        <h1 class="display-5 mb-4"><img src="images/icons8-water-64.png" alt="" style="width: 48px !important; "></h1>
+        <div class="card-body">
+          <h3 class="card-tittle pb-2 fw-bold">NO Water</h3>
+          <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor
+            sit amet.</p>
+        </div>
+      </div>
+      <div class="col-9 col-lg-3 col-md-4 mb-4">
+        <h1 class="display-5 mb-4"><img src="images/icons8-sugar-free-90.png" alt="" style="width: 48px !important; ">
+        </h1>
+        <div class="card-body">
+          <h3 class="card-tittle pb-2 fw-bold">No Artificial Sugar</h3>
+          <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- product -->
+<section class="product mt-5 section-margin" id="product">
+  <div class="container">
+    <div class="row">
+      <div class="col d-flex align-items-center">
+        <img src="images/minus.png" style="width: 30px;" alt="">
+        <h6 class="fw-normal ms-3"
+          style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin-bottom: 0 !important; ">
+          BOTTLE 1LTR, 600ML, 250ML</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col mt-4 d-flex justify-content-between">
+        <h4 style="font-size: 30px !important;">Product</h4>
+        <div class="btn-slider">
+          <i class="fa-solid fa-angle-left me-3"></i>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="row new-product mt-5">
+      <div class="col-lg-12 col-md-6 my-3">
+        <div class="swiper mySwiperProduct">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card-product px-4 py-2">
+              <a href="guava.html" style="text-decoration: none;">
+                <div class="img-box d-flex justify-content-center align-items-center py-4 ">
+                  <img src="images/guava juice.png" class="img-fluid" alt="" style="width: 79px;">
+                </div>
+                <div class="card-body ">
+                  <div class="detail d-flex">
+                    <h5 class="card-title">Guava Juice</h5>
+                  </div>
+                  <div class="rate d-flex">
+                    <div class="star">
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star-half text-warning'></i>
+                    </div>
+                  </div>
+                  <div class="price-wrapper">
+                    <p class="price">Rp 21.000</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-product px-4 py-2">
+              <a href="soursop.html" style="text-decoration: none;">
+                <div class="img-box d-flex justify-content-center align-items-center py-4 ">
+                  <img src="images/soursop juice.png" class="img-fluid" alt="" style="width: 88px;">
+                </div>
+                <div class="card-body ">
+                  <div class="detail d-flex">
+                    <h5 class="card-title">Soursop Juice</h5>
+                  </div>
+                  <div class="rate d-flex">
+                    <div class="star">
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star-half text-warning'></i>
+                    </div>
+                  </div>
+                  <div class="price-wrapper">
+                    <p class="price">Rp 24.000</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-product px-4 py-2">
+              <a href="mango.html" style="text-decoration: none;">
+                <div class="img-box d-flex justify-content-center align-items-center py-4 ">
+                  <img src="images/mango juice.png" class="img-fluid" alt="" style="width: 103px;">
+                </div>
+                <div class="card-body ">
+                  <div class="detail d-flex">
+                    <h5 class="card-title">Mango Juice</h5>
+                  </div>
+                  <div class="rate d-flex">
+                    <div class="star">
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star-half text-warning'></i>
+                    </div>
+                  </div>
+                  <div class="price-wrapper">
+                    <p class="price">Rp 26.000</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-product px-4 py-2">
+              <a href="kiwi.html" style="text-decoration: none;">
+                <div class="img-box d-flex justify-content-center align-items-center py-4 ">
+                  <img src="images/kiwi juice.png" class="img-fluid" alt="" style="width: 97px;">
+                </div>
+                <div class="card-body ">
+                  <div class="detail d-flex">
+                    <h5 class="card-title">Kiwi Juice</h5>
+
+                  </div>
+                  <div class="rate d-flex">
+                    <div class="star">
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star-half text-warning'></i>
+                    </div>
+                  </div>
+                  <div class="price-wrapper">
+                    <p class="price">Rp 31.000</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-product px-4 py-2">
+              <a href="orange.html" style="text-decoration: none;">
+                <div class="img-box d-flex justify-content-center align-items-center py-4">
+                  <img src="images/orange juice.png" class="img-fluid" alt="" style="width: 103px;">
+                </div>
+                <div class="card-body">
+                  <div class="detail d-flex">
+                    <h5 class="card-title">Orange Juice</h5>
+                  </div>
+                  <div class="rate d-flex">
+                    <div class="star">
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star-half text-warning'></i>
+                    </div>
+                  </div>
+                  <div class="price-wrapper">
+                    <p class="price">Rp 26.000</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-product px-4 py-2">
+              <a href="lemon.html" style="text-decoration: none;">
+                <div class="img-box d-flex justify-content-center align-items-center py-4">
+                  <img src="images/lemon juice.png" class="img-fluid" alt="" style="width: 94px;">
+                </div>
+                <div class="card-body">
+                  <div class="detail d-flex">
+                    <h5 class="card-title">Lemon Juice</h5>
+                  </div>
+                  <div class="rate d-flex">
+                    <div class="star">
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star-half text-warning'></i>
+                    </div>
+                  </div>
+                  <div class="price-wrapper">
+                    <p class="price">Rp 26.000</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-product px-4 py-2">
+              <a href="strawberry.html" style="text-decoration: none;">
+                <div class="img-box d-flex justify-content-center align-items-center py-4">
+                  <img src="images/strawberry juice.png" class="img-fluid" alt="" style="width: 91px;">
+                </div>
+                <div class="card-body">
+                  <div class="detail d-flex">
+                    <h5 class="card-title">Strawberry Juice</h5>
+                  </div>
+                  <div class="rate d-flex">
+                    <div class="star">
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star text-warning'></i>
+                      <i class='bx bxs-star-half text-warning'></i>
+                    </div>
+                  </div>
+                  <div class="price-wrapper">
+                    <p class="price">Rp 29.000</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- benefit -->
+<section class="benefit section-margin " id="benefit">
+  <div class="container-lg py-4">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8 mb-3">
+        <h2>Benefit of our Product</h2>
+        <!-- <p class="text-muted mb-4">Pls follow me on:</p> -->
+      </div>
+      <div class="row text-center mt-4">
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="shadow-sm p-3 rounded bg-white " style="width: 100%; height: 100%;">
+            <div class="icon my-3 text-info fs-2">
+              <i class="fa-solid fa-virus" style="color: #002939;"></i>
+            </div>
+            <h3 class="fs-5 py-2 text-black">Membunuh sel kanker</h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="shadow-sm p-4 rounded bg-white" style="width: 100%;">
+            <div class="icon my-3 text-info fs-2">
+              <i class="fa-solid fa-child" style="color: #002939;"></i>
+            </div>
+            <h3 class="fs-5 py-2 text-black">Meningkatkan Sistem Kekebalan Tubuh</h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="shadow-sm p-4 rounded bg-white" style="width: 100%;">
+            <div class="icon my-3 text-info fs-2">
+              <img src="images/icons8-stomach-60.png" alt="" style="width: 29px !important;">
+            </div>
+            <h3 class="fs-5 py-2 text-black">Melancarkan saluran pencernaan</h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4" style="margin: auto;">
+          <div class="shadow-sm p-4 rounded bg-white" style="width: 100%;">
+            <div class="icon my-3 text-info fs-2">
+              <i class='bx bx-donate-blood' style="color: #002939;"></i>
+            </div>
+            <h3 class="fs-5 py-2 text-black">Membantu Mengurangi Tekanan Darah</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center mt-5">
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="shadow-sm p-4 rounded bg-white " style="width: 100%; height: 100%;">
+
+            <div class="icon my-3 text-info fs-2">
+              <i class="fa-solid fa-bone" style="color: #002939;"></i>
+            </div>
+            <h3 class="fs-5 py-2 text-black">Memperkuat Tulang</h3>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="shadow-sm p-4 rounded bg-white" style="width: 100%;">
+            <div class="icon my-3 text-info fs-2">
+              <i class="fa-solid fa-lungs" style="color: #002939;"></i>
+            </div>
+            <h3 class="fs-5 py-2 text-black">Memelihara kesehatan jantung</h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4" style="margin: auto;">
+          <div class="shadow-sm p-4 rounded bg-white" style="width: 100%;">
+            <div class="icon my-3 fs-2">
+              <i class="fa-solid fa-brain" style="color: #002939;"></i>
+            </div>
+            <h3 class="fs-5 py-2 text-black"> Menjaga kesehatan otak</h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4" style="margin: auto;">
+          <div class="shadow-sm p-4 rounded bg-white" style="width: 100%;">
+            <div class="icon my-3 text-info fs-2">
+              <i class="fa-solid fa-eye" style="color: #002939;"></i>
+            </div>
+            <h3 class="fs-5 py-2 text-black">Menjaga kesehatan mata</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- where to buy -->
+
+<section class="lokasi section-margin" id="lokasi">
+  <div class="container">
+    <div class="row">
+      <div class="col mb-5">
+        <h2 class="headingwtb text-center">Where To Buy</h2>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-12">
+        <div class="headinglk text-center">
+          <h5 style="color: #ADADAD;">Location</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="map">
+          <div class="detail-map text-center d-flex justify-content-center">
+            <div class="text py-4">
+              <h5>Freshly juice store, Perumahan acropolis blok kf.24 RT.02, Jl. Bojong Depok Baru lll, RW.18,
+                Karadenan, Kabupaten Bogor, Jawa Barat
+              </h5>
+            </div>
+          </div>
+          <div class="google-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.0995553236276!2d106.79936461409442!3d-6.5090812654450305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c31967195749%3A0x2637648427046057!2sFreshly%20juice%20store!5e0!3m2!1sid!2sid!4v1653965752986!5m2!1sid!2sid"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col">
+        <div class="heading-reseller text-center mb-5">
+          <h5 style="color: #adadad;">Reseller location</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card-map rounded-3">
+          <div id="map"></div>
+          <div class="card-body py-3 px-4">
+            <h3 class="card-tittle pb-2 fw-bold" style="color: #002939;">Bu Elin</h3>
+            <p class="card-text" style="color: #002939;">Jatiwaringin, Kota Bekasi, Jawa Barat</p>
+            <p style="color: #002939;">( 0812-1145-5808)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card-map rounded-3">
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63443.29316034505!2d106.80712519137111!3d-6.367404290179344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec8fbc857d93%3A0x57ebdaaddab11290!2sKec.%20Cimanggis%2C%20Kota%20Depok%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1654996825205!5m2!1sid!2sid"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="card-body py-3 px-4">
+            <h3 class="card-tittle pb-2 fw-bold" style="color: #002939;">Bu Adel </h3>
+            <p class="card-text" style="color: #002939;">Cimanggis, Kota Depok, Jawa Barat</p>
+            <p style="color: #002939;">( 0812-1145-5808)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card-map rounded-3">
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63447.48908940791!2d106.67145119089348!3d-6.3333564076825075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef9a6f1af8f5%3A0xb6ca921381564bdc!2sKec.%20Pamulang%2C%20Kota%20Tangerang%20Selatan%2C%20Banten!5e0!3m2!1sid!2sid!4v1654996891004!5m2!1sid!2sid"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="card-body py-3 px-4">
+            <h3 class="card-tittle pb-2 fw-bold" style="color: #002939;">Bu Virzha </h3>
+            <p class="card-text" style="color: #002939;">Pamulang, Kota Tangerang Selatan, Banten</p>
+            <p style="color: #002939;">( 0812-1145-5808)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card-map rounded-3">
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63428.96048849424!2d106.7690645930001!3d-6.482363731350289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1e7cdd2e8d3%3A0x401576d14fed590!2sCibinong%2C%20Kec.%20Cibinong%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1654997115844!5m2!1sid!2sid"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="card-body py-3 px-4">
+            <h3 class="card-tittle pb-2 fw-bold" style="color: #002939;">Bu Intan </h3>
+            <p class="card-text" style="color: #002939;">Cibinong, Kabupaten Bogor, Jawa Barat</p>
+            <p style="color: #002939;">( 0812-1145-5808)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact us -->
+<section class="contact" id="contact">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#F1F3F6" fill-opacity="1"
+      d="M0,160L48,165.3C96,171,192,181,288,154.7C384,128,480,64,576,58.7C672,53,768,107,864,144C960,181,1056,203,1152,197.3C1248,192,1344,160,1392,144L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+    </path>
+  </svg>
+  <div class="container">
+    <div class="row">
+      <div class="col d-flex align-items-center">
+        <img src="images/minus.png" style="width: 30px;" alt="">
+        <h6 class="fw-normal ms-3"
+          style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin-bottom: 0 !important;">
+          WANT TO HAVE A CHAT? HERE'S MY</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col mt-4">
+        <h4 style="font-size: 30px !important; text-align: center;">Contact me</h4>
+      </div>
+    </div>
+
+    <div class="row mt-4 d-flex justify-content-center">
+      <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+        <form id="contactForm" action="https://formspree.io/f/mlezvjll" method="post" name="form" onsubmit="return validated()">
+          <!-- Name input -->
+          <div class="input-group mb-5">
+            <input required="" type="text" name="email" autocomplete="off" class="input" id="email">
+            <label class="user-label">Email</label>
+            <div id="email_error">
+              please fill in the email correctly</div>
+          </div>
+
+          <!-- Email address input -->
+          <div class="input-group mb-5">
+            <input required="" type="text" name="user" autocomplete="off" class="input" id="user">
+            <label class="user-label">Name</label>
+            <div id="user_error">Please fill in the name at least 4 letters</div>
+          </div>
+
+
+          <div class="mb-3">
+            <textarea type="text" name="text" class="area1" placeholder="Pesan"></textarea>
+          </div>
+
+          <!-- Form submit button -->
+          <button type="submit">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor"
+                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <span>Send</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+<footer>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#FFF1CD" fill-opacity="1"
+      d="M0,192L48,208C96,224,192,256,288,245.3C384,235,480,181,576,149.3C672,117,768,107,864,128C960,149,1056,203,1152,240C1248,277,1344,299,1392,309.3L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+    </path>
+  </svg>
+  <div class="footer" style="background-color: inherit;">
+    <div class="container">
+      <div class="row">
+        <div class="sosmed d-flex justify-content-center" style="margin-top: 40px;">
+          <button id="button" class="me-4">
+            <div id="icon">
+              <a href="#">
+                <i class="fa-brands fa-telegram fs-5 mb-lg-2 mt-1 mt-lg-2"></i>
+              </a>
+            </div>
+            <p class="mb-0">Telegram</p>
+          </button>
+          <button id="button" class="me-4">
+            <div id="icon">
+              <a href="https://www.instagram.com/larsalfarabi/">
+                <i class="fa-brands fa-instagram fs-5 mb-lg-2 mt-1 mt-lg-2"></i>
+              </a>
+            </div>
+            <p class="mb-0">Instagram</p>
+          </button>
+          <button id="button">
+            <div id="icon">
+              <a href="https://github.com/larsalfarabi">
+                <i class="fa-brands fa-github fs-5 mb-lg-2 mt-1 mt-lg-2"></i>
+              </a>
+            </div>
+            <p class="mb-0">github</p>
+          </button>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="copyright text-center fs-6">
+          <p class="my-0"> © Copyright <span>Freshly Juice</span>. All Right Reserved.</p>
+          <p class="my-0">Created & Desain with <span>Bootstrap 5</span> by <span>@Alfarabi</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- swiper js -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- map -->
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+  crossorigin=""></script>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+</script>
+
+<!-- custom js -->
+<script src="Js/script.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  var map = L.map('map').setView([-6.372611, 106.837343], 18);
+
+  var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  var marker = L.marker([-6.372611, 106.837343]).addTo(map)
+    .bindPopup('<b>Bu Elin</b><br />Location').openPopup();
+
+
+
+  var popup = L.popup()
+    .setLatLng([-6.372611, 106.837343])
+    .setContent('I am a Reseller Freshly juice.')
+    .openOn(map);
+
+  function onMapClick(e) {
+    popup
+      .setLatLng(e.latlng)
+      .setContent('You clicked the map at ' + e.latlng.toString())
+      .openOn(map);
+  }
+
+  map.on('click', onMapClick);
+</script>
+</body>
+
+</html>
