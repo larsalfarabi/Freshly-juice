@@ -102,6 +102,12 @@ body {
     width: 298px !important;
     border-radius: 8px !important;
   }
+  .benefit .immune h3{
+    padding: 0.6rem 0 !important;
+  }
+  .footer .copyright p{
+    font-size: 14px !important;
+  }
 }
 @media screen and (min-width: 820px) {
   .home {
