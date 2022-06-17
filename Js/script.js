@@ -12,9 +12,11 @@ var swiper = new Swiper(".mySwiperProduct", {
 var contact = document.getElementById('contactFrom')
 var email = document.getElementById('email')
 var user = document.getElementById('user')
+var pesan = document.getElementById('pesan')
 
 var email_error = document.getElementById("email_error");
 var user_error = document.getElementById("user_error");
+var pesan_error = document.getElementById("pesan_error");
 
 function validated() {
     if (email.value.length < 8) {
@@ -27,6 +29,12 @@ function validated() {
         user.style.border = "1px solid red";
         user_error.style.display = "block";
         user.focus();
+        return false;
+    }
+    if (pesan.value.length < 30) {
+        pesan.style.border = "1px solid red";
+        pesan_error.style.display = "block";
+        pesan.focus();
         return false;
     }
 }
@@ -47,5 +55,14 @@ function user_verify() {
     }
 }
 
+function pesan_verify() {
+    if (pesan.value.length >= 30) {
+        pesan.style.border = "1px solid silver";
+        pesan_error.style.display = "none";
+        return true;
+    }
+}
+
 addEventListener('textInput', email_verify)
 addEventListener('textInput', user_verify)
+addEventListener('textInput', pesan_verify)

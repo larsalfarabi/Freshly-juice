@@ -73,7 +73,7 @@ body {
   font-family: var(--headingFont);
   font-weight: 700;
 }
-.btn-home .btn-buy:active {
+.btn-home .btn-buy:active{
   transform: translateY(4px) translateX(4px);
   box-shadow: white;
 }
@@ -83,7 +83,7 @@ body {
   .service .headings {
     font-size: 20px !important;
   }
-  .new-product .card{
+  .new-product .card:nt{
     width: 18rem !important;
   }
 
@@ -252,7 +252,8 @@ body {
 
 /* validation */
 #contactForm .input-group #email_error,
-#contactForm .input-group #user_error{
+#contactForm .input-group #user_error,
+#contactForm #pesan_error{
     margin-top: 10px;
     width: 100%;
     font-size: 18px;
@@ -274,41 +275,53 @@ body {
 }
 
 /* navbar menu */
-
-#nav-menu span{
-  display: block;
-  width: 28px;
-  height: 2px;
-  border-radius: 9999px;
-  background-color: black;
+.toggle{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: var(--backgroundColor);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.toggle span{
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  border-radius: 9999px !important;
+  transition: 0.5s;
+}
+.toggle span:nth-child(1){
+  transform: translateY(-15px);
+  width: 25px;
+  right: 20px;
+}
+.toggle.active span:nth-child(1){
+  width: 40px;
+  transform: translateY(0px) rotate(45deg);
+  transition-delay: 0.125s;
+  right: 5px !important;
 }
 
-#nav-menu > span:not(:last-child){
-  margin-bottom: 7px;
+.toggle span:nth-child(2){
+  transform: translateY(15px);
+  width: 18px;
+  right: 26px;
+}
+.toggle.active span:nth-child(2){
+  width: 40px;
+  transform: translateY(0px) rotate(315deg);
+  transition-delay: 0.25s;
+  right: 5px !important;
 }
 
-#nav-menu, #nav-menu > span{
-  transition: all .4s ease-in-out;
+.toggle.active span:nth-child(3){
+  transform: translateX(60px);
 }
-
-#nav-menu.active{
-  transition-delay: 0.8s;
-  transform: rotate(45deg);
-}
-#nav-menu.active > span:nth-child(2){
-  width: 0;
-}
-#nav-menu.active > span:nth-child(1),
-#nav-menu.active > span:nth-child(3){
-  transition-delay: .4s;
-}
-#nav-menu.active > span:nth-child(1){
-  transform: translateY(9px);
-}
-#nav-menu.active > span:nth-child(3){
-  transform: translateY(-9px) rotate(90deg);
-}
-
 /* input */
 
 .input-group {
