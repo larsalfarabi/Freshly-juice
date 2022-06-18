@@ -66,3 +66,27 @@ function pesan_verify() {
 addEventListener('textInput', email_verify)
 addEventListener('textInput', user_verify)
 addEventListener('textInput', pesan_verify)
+
+
+// var jusBesar = document.getElementById('besar');
+// var jusSedang = document.getElementById('sedang');
+// var jusKecil = document.getElementById('kecil');
+
+// var hargaBesar = document.getElementById('Bbesar');
+// var hargaSedang = document.getElementById('Ssedang');
+// var hargaKecil = document.getElementById('Kkecil');
+
+// function jusBesar() {
+//     hargaBesar.style.display = "none";
+// }
+// function jusSedang() {
+//     hargaSedang.style.display = "none";
+// }
+// function jusKecil() {
+//     hargaKecil.style.display = "none";
+// }
+
+// addEventListener('click', jusBesar)
+// addEventListener('click', jusSedang)
+// addEventListener('click', jusKecil)
+

@@ -57,6 +57,14 @@ body {
   color: #fdc328;
   border-radius: 5px !important;
 }
+.product #besar {
+  background-color: #3b2b3a;
+  color: #fdc328;
+  border-radius: 5px !important;
+}
+.product #Ssedang, .product #Kkecil, .product #Bbesar {
+  display: none;
+}
 .product .price {
   color: var(--secondaryColor);
   font-size: 30px !important;

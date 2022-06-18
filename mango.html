@@ -70,22 +70,24 @@
                             juice.</h4>
                     </div>
                     <div class="ukuran d-flex mt-5">
-                        <div class="btn btn-ukuran d-flex justify-content-evenly me-3 py-2 px-4">
+                        <div class="btn btn-ukuran d-flex justify-content-evenly me-3 py-2 px-4" id="kecil" onclick="jusKecil()">
                             <i class="fa-solid fa-bottle-droplet" style="font-size: 1.7rem;"></i>
                             <p class="mb-0">250 ML</p>
                         </div>
-                        <div class="btn btn-ukuran d-flex justify-content-evenly me-3 py-2 px-4">
+                        <div class="btn btn-ukuran d-flex justify-content-evenly me-3 py-2 px-4" id="sedang" onclick="jusSedang()">
                             <i class="fa-solid fa-bottle-droplet" style="font-size: 1.7rem;"></i>
                             <p class="mb-0">600 ML</p>
                         </div>
-                        <div class="btn btn-ukuran d-flex justify-content-evenly me-3 py-2 px-4">
+                        <div class="btn btn-ukuran d-flex justify-content-evenly me-3 py-2 px-4" id="besar" onclick="jusBesar()">
                             <i class="fa-solid fa-bottle-droplet" style="font-size: 1.7rem;"></i>
                             <p class="mb-0">1000 ML</p>
                         </div>
                     </div>
                     <div class="price-wrapper mt-4 d-flex align-items-center justify-content-between"
                         style="border-top: 1px solid gainsboro;">
-                        <p class="price pt-4">Rp 26.000</p>
+                        <p class="price pt-4" id="Bbesar">Rp 26.000</p>
+                        <p class="price pt-4" id="Ssedang">Rp 15.000</p>
+                        <p class="price pt-4" id="Kkecil">Rp 10.000</p>
                         <div class="star d-flex align-items-center">
                             <i class='bx bxs-star text-warning'></i>
                             <p class="mb-0">4.5</p>
@@ -96,6 +98,8 @@
             </div>
         </div>
     </section>
+
+    
 
     <section class="another" id="juice">
         <div class="container pt-5 pb-5">
@@ -114,8 +118,8 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide card-product px-4 py-2 ">
                                 <a href="guava.html" style="text-decoration: none;">
-                                    <div class="img-box d-flex justify-content-center align-items-center py-4 ">
-                                        <img src="images/guava juice.png" class="img-fluid" alt="" style="width: 79px;">
+                                    <div class="img-box d-flex justify-content-center align-items-center pt-4 ">
+                                        <img src="images/guava juice.png" class="img-fluid" alt="" style="width: 67px;">
                                     </div>
                                     <div class="card-body ">
                                         <div class="detail d-flex">
@@ -131,16 +135,16 @@
                                             </div>
                                         </div>
                                         <div class="price-wrapper">
-                                            <p class="price">Rp 21.000</p>
+                                            <p class="mb-0 price">Rp 21.000</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="swiper-slide card-product px-4 py-2">
                                 <a href="soursop.html" style="text-decoration: none;">
-                                    <div class="img-box d-flex justify-content-center align-items-center py-4 ">
+                                    <div class="img-box d-flex justify-content-center align-items-center pt-4 ">
                                         <img src="images/soursop juice.png" class="img-fluid" alt=""
-                                            style="width: 88px;">
+                                            style="width: 75px;">
                                     </div>
                                     <div class="card-body ">
                                         <div class="detail d-flex">
@@ -156,15 +160,15 @@
                                             </div>
                                         </div>
                                         <div class="price-wrapper">
-                                            <p class="price">Rp 24.000</p>
+                                            <p class="mb-0 price">Rp 24.000</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="swiper-slide card-product px-4 py-2">
                                 <a href="kiwi.html" style="text-decoration: none;">
-                                    <div class="img-box d-flex justify-content-center align-items-center py-4 ">
-                                        <img src="images/kiwi juice.png" class="img-fluid" alt="" style="width: 97px;">
+                                    <div class="img-box d-flex justify-content-center align-items-center pt-4 ">
+                                        <img src="images/kiwi juice.png" class="img-fluid" alt="" style="width: 81px;">
                                     </div>
                                     <div class="card-body ">
                                         <div class="detail d-flex">
@@ -181,16 +185,16 @@
                                             </div>
                                         </div>
                                         <div class="price-wrapper">
-                                            <p class="price">Rp 31.000</p>
+                                            <p class="mb-0 price">Rp 31.000</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="swiper-slide card-product px-4 py-2">
                                 <a href="orange.html" style="text-decoration: none;">
-                                    <div class="img-box d-flex justify-content-center align-items-center py-4">
+                                    <div class="img-box d-flex justify-content-center align-items-center pt-4">
                                         <img src="images/orange juice.png" class="img-fluid" alt=""
-                                            style="width: 103px;">
+                                            style="width: 86px;">
                                     </div>
                                     <div class="card-body">
                                         <div class="detail d-flex">
@@ -206,15 +210,15 @@
                                             </div>
                                         </div>
                                         <div class="price-wrapper">
-                                            <p class="price">Rp 26.000</p>
+                                            <p class="mb-0 price">Rp 26.000</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="swiper-slide card-product px-4 py-2">
                                 <a href="lemon.html" style="text-decoration: none;">
-                                    <div class="img-box d-flex justify-content-center align-items-center py-4">
-                                        <img src="images/lemon juice.png" class="img-fluid" alt="" style="width: 94px;">
+                                    <div class="img-box d-flex justify-content-center align-items-center pt-4">
+                                        <img src="images/lemon juice.png" class="img-fluid" alt="" style="width: 79px;">
                                     </div>
                                     <div class="card-body">
                                         <div class="detail d-flex">
@@ -230,16 +234,16 @@
                                             </div>
                                         </div>
                                         <div class="price-wrapper">
-                                            <p class="price">Rp 26.000</p>
+                                            <p class="mb-0 price">Rp 26.000</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="swiper-slide card-product px-4 py-2">
                                 <a href="strawberry.html" style="text-decoration: none;">
-                                    <div class="img-box d-flex justify-content-center align-items-center py-4">
+                                    <div class="img-box d-flex justify-content-center align-items-center pt-4">
                                         <img src="images/strawberry juice.png" class="img-fluid" alt=""
-                                            style="width: 91px;">
+                                            style="width: 76px;">
                                     </div>
                                     <div class="card-body">
                                         <div class="detail d-flex">
@@ -255,7 +259,7 @@
                                             </div>
                                         </div>
                                         <div class="price-wrapper">
-                                            <p class="price">Rp 29.000</p>
+                                            <p class="mb-0 price">Rp 29.000</p>
                                         </div>
                                     </div>
                                 </a>
@@ -312,6 +316,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script src="Js/script.js"></script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
