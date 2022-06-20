@@ -18,6 +18,9 @@ body {
   font-family: var(--mainFont) !important;
   background-color: #f1f3f6 !important;
 }
+.section-margin{
+  margin-top: 40px !important;
+}
 
 /* navbar */
 .navbar {
@@ -62,9 +65,9 @@ body {
   color: #fdc328;
   border-radius: 5px !important;
 }
-.product #Ssedang, .product #Kkecil, .product #Bbesar {
+/* .product #Ssedang, .product #Kkecil, .product #Bbesar {
   display: none;
-}
+} */
 .product .price {
   color: var(--secondaryColor);
   font-size: 30px !important;
@@ -85,7 +88,7 @@ body {
 
 .another .btn-slider{
   color: var(--secondaryColor);
-  font-size: 35px;
+  font-size: 25px;
 }
 .another .btn-slider i{
   cursor: pointer;
@@ -124,44 +127,6 @@ body {
   font-weight: 700;
   color: #fdc328;
 }
-
-
-/* navbar menu */
-
-#nav-menu span{
-  display: block;
-  width: 28px;
-  height: 2px;
-  border-radius: 9999px;
-  background-color: black;
-}
-
-#nav-menu > span:not(:last-child){
-  margin-bottom: 7px;
-}
-
-#nav-menu, #nav-menu > span{
-  transition: all .4s ease-in-out;
-}
-
-#nav-menu.active{
-  transition-delay: 0.8s;
-  transform: rotate(45deg);
-}
-#nav-menu.active > span:nth-child(2){
-  width: 0;
-}
-#nav-menu.active > span:nth-child(1),
-#nav-menu.active > span:nth-child(3){
-  transition-delay: .4s;
-}
-#nav-menu.active > span:nth-child(1){
-  transform: translateY(9px);
-}
-#nav-menu.active > span:nth-child(3){
-  transform: translateY(-9px) rotate(90deg);
-}
-
 
 #button {
   font-family: inherit;
@@ -280,4 +245,54 @@ body {
     font-size: 14px !important;
   }
   
+}
+
+
+/* navbar menu */
+#menutoggle{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #f1f3f6;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+#menutoggle span{
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background-color: var(--secondaryColor);
+  border-radius: 9999px !important;
+  transition: 0.5s;
+}
+#menutoggle span:nth-child(1){
+  transform: translateY(-15px) !important;
+  width: 25px;
+  right: 20px;
+}
+#menutoggle.active span:nth-child(1){
+  width: 40px;
+  transform: translateY(0px) rotate(45deg) !important;
+  transition-delay: 0.125s;
+  right: 5px !important;
+}
+
+#menutoggle span:nth-child(2){
+  transform: translateY(15px) !important;
+  width: 18px;
+  right: 26px;
+}
+#menutoggle.active span:nth-child(2){
+  width: 40px;
+  transform: translateY(0px) rotate(315deg) !important;
+  transition-delay: 0.25s;
+  right: 5px !important;
+}
+
+#menutoggle.active span:nth-child(3){
+  transform: translateX(60px) !important;
 }

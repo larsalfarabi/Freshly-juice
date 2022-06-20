@@ -38,7 +38,7 @@
       <a class="navbar-brand" href="#"><img src="images/Group 1.png" alt="" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <div id="nav-menu">
+        <div id="menutoggle">
           <span></span>
           <span></span>
           <span></span>
@@ -48,7 +48,7 @@
         id="navbarNavAltMarkup">
         <div class="navbar-nav me-4">
           <a class="nav-link me-3 active" aria-current="page " href="/index.html"><i class="fa-solid fa-lemon me-1"
-            style="color: #002939;"></i>Home</a>
+              style="color: #002939;"></i>Home</a>
         </div>
       </div>
     </div>
@@ -65,11 +65,12 @@
         </div>
         <div class="col-12 col-lg-7 ps-0 ps-md-5">
           <div class="detail mt-4 mt-lg-0">
-            <h5 class="nama-product mb-0 fw-bold">Guava Juice <span style="font-size: 10px; color: black;"> (Jambu biji)</span></h5>
+            <h5 class="nama-product mb-0 fw-bold">Guava Juice <span style="font-size: 10px; color: black;"> (Jambu
+                biji)</span></h5>
             <h4 class="fw-bold mt-4" style="color: var(--secondaryColor); ">Start your day with a <br> freshly blended
               juice.</h4>
           </div>
-          <div class="ukuran d-flex mt-5">
+          <div class="ukuran d-flex mt-5 justify-content-center justify-content-lg-start">
             <div class="btn btn-ukuran d-flex justify-content-evenly me-3 py-2 px-4" id="price">
               <i class="fa-solid fa-bottle-droplet" style="font-size: 1.7rem;"></i>
               <p class="mb-0">250 ML</p>
@@ -94,14 +95,36 @@
           </div>
         </div>
       </div>
+
+      <!-- Description product -->
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="deskripsi-tab" data-bs-toggle="tab" data-bs-target="#deskripsi" type="button"
+                role="tab" aria-controls="deskripsi" aria-selected="true">Deskripsi Product</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button"
+                role="tab" aria-controls="review" aria-selected="false">Review Product</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="deskripsi" role="tabpanel" aria-labelledby="deskripsi-tab">...</div>
+            <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">...</div>
+          </div>
+        </div>
+      </div>
+      <!-- Description product -->
+
     </div>
   </section>
 
-  <section class="another" id="juice">
+  <section class="another " id="juice">
     <div class="container pt-5 pb-5">
       <div class="row mt-5">
-        <div class="col mt-4 d-flex justify-content-between">
-          <p style="font-size: 23px !important; font-weight: 700; text-decoration: underline;">Similar Products</p>
+        <div class="col d-flex justify-content-between section-margin" style="border-bottom: 1px solid #dfdfdf;"> 
+          <p class="mb-0 mt-3" style="font-size: 12px !important; font-weight: bolder; border-bottom: 3px solid black; height: 25px;">YOU MAY ALSO LIKE</p>
           <div class="btn-slider">
             <i class="fa-solid fa-angle-left me-3"></i>
             <i class="fa-solid fa-angle-right"></i>
@@ -312,7 +335,7 @@
   </script>
 
   <!-- JS -->
-<script src="Js/script.js"></script>
+  <script src="Js/script.js"></script>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
