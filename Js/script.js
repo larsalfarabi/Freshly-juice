@@ -90,3 +90,14 @@ addEventListener('textInput', pesan_verify)
 // addEventListener('click', jusSedang)
 // addEventListener('click', jusKecil)
 
+const tombol = document.querySelector("updown");
+
+tombol.addEventListener("click",
+function(){
+    window.scrollTo({
+        top: 0,
+        bottom: 0,
+        behavior: "smooth"
+    });
+})
+

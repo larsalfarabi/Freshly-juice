@@ -553,3 +553,18 @@ body {
     border-radius: 0.5em;
    }
 }
+
+#updown{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding : 20px;
+  border-radius: 100%;
+  background: #3B2B3A ;
+  /* border: 3px solid white; */
+  z-index: 1;
+}
+#updown a{
+  color: #FDC328;
+  text-decoration: none;
+}
